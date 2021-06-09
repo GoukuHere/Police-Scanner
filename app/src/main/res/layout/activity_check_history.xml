@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".CheckHistory">
+
+    <EditText
+        android:id="@+id/check_cnic"
+        android:layout_width="231dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="256dp"
+        android:background="#81FFFEFE"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter CNIC"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#950C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="390dp"
+        android:layout_height="47dp"
+        android:layout_centerHorizontal="true"
+        android:background="#9C0762FF"
+        android:gravity="center"
+        android:hint="CHECK HISTORY"
+        android:textColor="#191818"
+        android:textColorHint="#FAF7F7"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#E91E63"
+        android:text="CHECK"
+        android:textColor="#F3ECEC"
+        android:textColorHint="#F3EDED"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#97D52255"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_cnic"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
