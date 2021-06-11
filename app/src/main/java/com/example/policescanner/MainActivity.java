@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button login;
+    Button Registration;
     EditText cnic;
     EditText password;
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.check_btn);
         cnic = findViewById(R.id.cnic);
         password = findViewById(R.id.pass_text);
+        Registration = findViewById(R.id.reg_button);
 
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Invalid Credentials!", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        Registration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent reg_menu = new Intent(MainActivity.this, Registration.class);
+                startActivity(reg_menu);
             }
         });
 

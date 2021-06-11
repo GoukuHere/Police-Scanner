@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/REGISTRATION"
+        android:layout_width="390dp"
+        android:layout_height="47dp"
+        android:layout_centerHorizontal="true"
+        android:background="#9F075AFF"
+        android:gravity="center"
+        android:text="REGISTRATION"
+        android:textColor="#F6F2F2"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="212dp"
+        android:background="#79E6DFDF"
+        android:ems="10"
+        android:hint="Enter your CNIC"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/REGISTRATION"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="60dp"
+        android:background="#79E6DFDF"
+        android:ems="10"
+        android:hint="Create a password"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/reg_button2"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:background="#A8FC0328"
+        android:text="Register Now"
+        android:textColor="#F4EFEF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:backgroundTint="#B8172F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
